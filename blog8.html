@@ -2,116 +2,88 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-/* Add a gray background color with some padding */
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
-}
-
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: white;
-}
-
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Blog No: 1</title>
 </head>
 <body>
-
-<div class="header">
-  <h2>Blog Name</h2>
-</div>
-
 <div class="row">
   <div class="leftcolumn">
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      
+      <div class="header">
+            <h3>Blog Title 1: 5G Private Networks & 5G Use Cases</h3>
+      </div>
+      <div class=" fakeimg">
+            <img class="blog-image" src="Image/5g_1.jpg">
+      </div>
+      <div class="card">
+            <h2>5G Private Networks & 5G Use Cases</h2>
+            <h3>Praschant Chugh <br>
+              Thursday, September 15th, 2022</h3>
+            
+            <p class="para">
+              A key theme in the current decade of mobile industry are private 5G cellular networks. Early private networks and networks relying on macro coverage are initially 4G-based as the transitioning to 5G matures. Greenfield isolated private networks are typically 5G stand-alone based.
+
+              There are endless use cases for Private Networks. With 5G radio bands becoming available for private network usage only, the demand for dedicated private networks increases.
+
+              Every Private Network comes with different requirements on the network. A one-size-fits-all packet data network will not be capable to cope with future data volumes and application requirements.
+
+              To accommodate the diversity of the data networks, the CISCO Private Network solution addresses these demands considering the key drivers highlighted in this article.
+
+              Private 5G networks have gained traction worldwide as regulators allocate more spectrum to enterprises to establish their own private 5G networks. This is a progressive opportunity for companies that require 5G capabilities to implement their transformative applications. Now innovative digital transformation will drive smart factories and the internet of things.
+            </p>
+            <p class="para">
+                <h2>Role of 5G Networks</h2>
+                    Dive deep into your imagination and seek a world where smart homes can unlock doors just by scanning your face, automatically adjust lighting and temperature, a world where chronic diseases are managed 24-7 and where accidents are a thing of the past. You can imagine that the fifth generation of wireless technology promises more than just a fast network.
+                    It will not only help you redefine the network but also establish a new global wireless standard for speed. A 5G network builds a bridge to the future. This technology is not just a new generation of wireless technology, it is a 5G foundation to release the full potential of IoT thus revolutionizing technological growth.
+            </p>
+            <p class="para">
+                <h2>What Are the Advantages Of 5G And Use Cases?</h2>
+                    <b>1. Greater speed in transmissions</b><br><br>
+                    Speed in transmissions can reach 15 to 20 Gbps. With the help of the newfound speed we can access data, files, programs etc on remote applications.<br><br>
+                    <b>2. Increased number of devices connected</b><br><br>
+                    5G impact on IoT is clearly the increased number of devices that can be connected to the network. All connected devices are able to communicate with each other in real-time and exchange information to drive different outcomes based on type of data.<br><br>
+                    <b>3. Lower latency</b><br><br>
+                    In simple words, latency is the time that passes between the order given to your smart device till the action occurs. Thanks to 5G this time will be ten times less than what it was in 4G. For example: Due to lower latency the use of sensors can be increased in industrial plants. Be it control of machinery, control over logistics or remote transport all is now possible.
+                    <br><br>
+                    <b>4. Network slicing </b><br><br>
+                    5G implements virtual networks and creates subnets such that the network connection is adjusted as per the specific requirements. By creating subnetworks, some specific characteristics are given to a part of the network. The programmable network will prioritize connections, in case of emergencies by allocating different latencies in the connection. You are now familiar with the advancements and advantages that applications of IoT in 5G can offer. So, let’s discuss how this wave of new technology is coming up with an endless number of use cases.<br>
+            </p>
     </div>
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    </div>
+    
   </div>
   <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <div class="card" style="margin-top: 0px;">
+      <h2>About Author</h2>
+      <div class="fakeimg" style="background-color: #ccc;">
+          <img class="blog-image" src="Image/user.png">
+      </div>
+      <p style="text-align: center;"><b>Praschant Chugh</b><br>Cisco Tech Blogger</p>
     </div>
+    
     <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
+      <h2>Related Blogs</h2>
+      <div class="blog-card">
+          <img class="blog-image" src="Image/5g_2.jpg" alt="Blog 2 Image" onclick="location.href='Blog2.html';">
+          <h2>Blog Title 2: 5G gathers pace, platform approach will drive scalability in India</h2>
+          <p>Date: Dec 27, 2023</p>
+          <p>Author: Neil Shah ETTelecom</p>
+          <a class="read-more-btn" href="blog2.html">Read More</a>
+      </div>
+      <div class="blog-card">
+          <img class="blog-image" src="Image/5g_3.jpg" alt="Blog 3 Image" onclick="location.href='blog3.html';">
+          <h2>Blog Title 3: Beyond 5G: The new era of connectivity.</h2>
+          <p>Date: July 7, 2023</p>
+          <p>Author: Ken Nagai</p>
+          <a class="read-more-btn" href="blog3.html">Read More</a>
+      </div>
+      <div class="blog-card">
+          <img class="blog-image" src="Image/5g_4.jpg" alt="Blog 4 Image" onclick="location.href='blog4.html';">
+          <h2>Blog Title 4: Insight on Green Network Security in 5G.</h2>
+          <p>Date: February 27, 2023</p>
+          <p>Author: Ercin Torun</p>
+          <a class="read-more-btn" href="blog4.html">Read More</a>
+        
+      </div>
     </div>
   </div>
 </div>
