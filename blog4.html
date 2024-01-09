@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Blog No: 1</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="leftcolumn">
+
+            <div class="header">
+                <h3>Blog Title 4: Insight on Green Network Security in 5G.</h3>
+            </div>
+            <div class=" fakeimg">
+                <img class="blog-image" src="Image/5g_4.jpg">
+            </div>
+            <div class="card">
+                <h2>Insight on Green Network Security in 5G.</h2>
+                <h3>Ercin Torun <br> February 27, 2023</h3>
+
+                <p class="para">
+                    With the evolution of LTE, 5G and Cloud, many new use cases emerged, from video-centric high-bandwidth consuming, traffic generating applications (5G use case: eMBB, live streaming, mobile healthcare), to massive IOT with billions of devices (5G use case:
+                    mMTC, smart meters...). All these “beyond connectivity” use cases make the user plane traffic become the key element of value-added services such as IOT or AR to name a few. The increase of user-plane traffic and number of devices
+                    requires high-performance processing in the network, which in turn translate to higher energy consumption. Ever-growing energy prices and infrastructure size led by these “beyond connectivity” services and traffic are severely impacting
+                    the balance sheet of the Telco Operators.</p>
+                <p class="para">
+                    <h2>What is Security Gateway?</h2>
+                    For the 4G/5G RAN, Operators are in the process of deploying tens of thousands of radio sites to enable new services, and to handle the ever expanding traffic loads. Smaller cell sites with limited physical security, unlike the aggregation and core sites,
+                    are the most vulnerable points of a mobile network. The growing number of small cell deployments (femtocell, picocell, microcell eNBs, gNBs) increases the risk of breaches like rogue radio connections and man-in-the-middle (MiTM) attacks.<br>                    Owing to the fact that all IP-based networks (including mobile backhauls) have a risk of exposing mobile core elements to IP based attacks and exploitation, the Third-Generation Partnership Project (3GPP), defined specifications to
+                    protect 5G and 4G mobile packet core and RAN networks like IPSec encryption of signaling and user-plane traffic of S1/X2 and N2/N3 interfaces.<br> Today, Operators are implementing IPSec functionality using Security Gateways (SecGWs)
+                    with different deployment types based on their topologies and service needs to preserve data integrity, confidentiality and authentication, to prevent attacks and to protect 5G/4G mobile packet core and RAN networks.<br>
+                </p>
+                <p class="para">
+                    <h2>What is Carrier-Grade NAT? </h2>
+                    The exponential growth of cloud services, and connected devices and subscribers, in part due to the Internet of Things (IoT) ubiquity, is taking its toll on the availability of global IPv4 addresses making it impossible or too expensive for operators
+                    to buy or lease IPv4 addresses. Network Address Translation (NAT) solutions that decrease the need for the number of public IP addresses by sharing it among private IP addresses, are now the de facto feature for Service Providers against
+                    the IPv4 depletion threat to business continuity and growth, providing a short-term safety margin for the long-term plans to migrate to a IPv6 infrastructure. However, even on full IPv6 architectures, carrier-grade network address
+                    translation (CGNAT) will still be required in order to avoid the direct exposure of end-devices and customers to external threats.<br>Due to the sheer number of connected devices, this approach requires a solution
+                    with purpose-built Carrier-Grade IPv4/v6 Network service appliances, physical or virtual, with a robust set of CGNAT capabilities like Fortinet’s FortiGate Series.
+                    <p class="para">
+                        <h2>SECGW & CGNAT Use Cases with Fortinet FortiGate & Savings Validated by NEC 5G Transport Network CoE</h2>
+                        NEC has been working with Fortinet to advance the network security in the 5G era and as a global system integrator, implementing FortiGate for SECGW and CGNAT purposes for many large global Operators.<br>Fortinet’s FortiGate appliances
+                        have a strong advantage regarding power consumption and rack space per GB/s of bandwidth because of their use of NP7 ASICs. At the laboratory of 5G Transport Network Center of Excellence (CoE), NEC has compared the power consumption
+                        of FortiGate against the appliances of other vendors using publicly available data from their data sheets.
+
+                    </p>
+                </p>
+            </div>
+
+        </div>
+        <div class="rightcolumn">
+            <div class="card" style="margin-top: 0px;">
+                <h2>About Author</h2>
+                <div class="fakeimg" style="background-color: #ccc;">
+                    <img class="blog-image" src="Image/user.png">
+                </div>
+                <p style="text-align: center;"><b>Ercin Torun</b><br>Transport Solutions Architect</p>
+            </div>
+
+            <div class="card">
+                <h2>Related Blogs</h2>
+                <div class="blog-card">
+                    <img class="blog-image" src="Image/5g_1.jpg" alt="Blog 1 Image" onclick="location.href='Blog1.html';">
+                    <h2>Blog Title 1: 5G Private Networks and 5G Use Cases </h2>
+                    <p>Date: Thursday, September 15th, 2022</p>
+                    <p>Author: Praschant Chugh</p>
+                    <a class="read-more-btn" href="blog1.html">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <img class="blog-image" src="Image/5g_2.jpg" alt="Blog 2 Image" onclick="location.href='blog2.html';">
+                    <h2>Blog Title 2: 5G gathers pace, platform approach will drive scalability in India</h2>
+                    <p>Date: Dec 27, 2023</p>
+                    <p>Author: Neil Shah ETTelecom</p>
+                    <a class="read-more-btn" href="blog2.html">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <img class="blog-image" src="Image/5g_3.jpg" alt="Blog 3 Image" onclick="location.href='blog3.html';">
+                    <h2>Blog Title 3: Beyond 5G: The new era of connectivity.</h2>
+                    <p>Date: July 7, 2023</p>
+                    <p>Author: Ken Nagai</p>
+                    <a class="read-more-btn" href="blog3.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+</body>
+
+</html>

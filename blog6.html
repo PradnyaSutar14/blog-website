@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Blog No: 6</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="leftcolumn">
+
+            <div class="header">
+                <h3>Blog Title 6: 5GS-WiFi(ePDG) Calling/ Offloading Aspects.</h3>
+            </div>
+            <div class=" fakeimg">
+                <img class="blog-image" src="Image/5g_6.jpg">
+            </div>
+            <div class="card">
+                <h2>5GS-WiFi(ePDG) Calling/ Offloading Aspects.</h2>
+                <h3>Sushobhit Goyal <br> July 11, 2020</h3>
+
+                <p class="para">
+                    We already have seen about IMS Media Voice / Video etc offload to ePDG from EPS to seek better Quality coverage and throughput and Seamless experience for Video / Voice calls in a closed environment like In-house, office, etc where User can access good
+                    WiFi coverage than EPS. To get same kind of good quality coverage experience in epDG
+                    <–> 5GS HO deployment, I have covered possible call flows with required changes in IKE_AUTH and 5GS message to support these scenarios. We will not cover N3IWF
+                        <–> 5GS Handover scenarios in this document now and will cover it in the future.</p>
+                <p class="para">
+                    <h2>Pre-Requisite</h2>
+                    To Simplify and for better understanding, I have taken case as UE is 3GPP REGISTERED with 5GS in upcoming sections. Furthermore, There is N26 interface between AMF and MME present and UE support only Single Registration mode only.
+
+                    <br>1. If UE is Registered with 3GPP EPS than during ePDG -> 5GS HO, UE will initiate RegistrationRequest on 5G with “requesttype” as “Mobility Registration” in Single Registration mode.
+                    <br>2. If UE support Dual Registration mode than UE will initiate RegistrationRequest on 5G with “requesttype” as “initial Registration”</p>
+                <p class="para">
+                    <h2> ePDG–> 5GS IMS Media HO</h2>
+                    <h3>General Call Flow</h3>
+                    1. UE is registered with 5GS and IMS and Internet PDU session established. Voice / Video / RTT call is successfully established on 5GS.
+                    <br>2. NW measure WLAN / ePDG power and find good WLAN power, which is appropriate to do Voice / Video offload on ePDG.
+                    <br>3. ePDG DNS message exchanged and UE gets ePDG Tunnel information.
+                    <br>4. IKE_SA_INIT Procedure on epDG start to get Encryption algos and other epDG policies exchange.
+                    <br>5. In IKE_AUTH_Req , UE inform NW about N1_Mode_Capabilty with PLMN info which are equivalent to 5GS and ongoing PDU_Session_ID . Same PCO information ( Port, UE IP, etc) as used in 5GS will be reused.
+                    <br>6. In IKE_AUTH_RESP, NW will provide N1_Mode_Information with S-NSSAI information and equivalent PLMN ID and other default parameters ( same as used in EPS).
+                    <br>7. IMS PDU session on 5GS released.
+                    <br>8. Once EAP-AKA IKEV2 procedure completed. UE will initiate IMS Re-Registration on epDG
+                    <br>9. IMS Voice/ Video/RTT call offload from 5GS to epDG.</p>
+                <p class="para">
+                    <h2> ePDG –> 5GS –> EPS Fallback case</h2>
+                    <h3> General Call Flow</h3>
+                    1. Please follow till step 7 of section 1.4.2
+                    <br>2. UE may send Re-INVITE to establish and request Dedicated Voice QoS Flow on 5GS and set PANI as “3GPP-NR-FDD” .
+                    <br>3. NW will decide to do Fallback Voice / video on EPS during Voice QoS Flow establishment.
+                    <br>4. Voice Media RTP may be paused or go on default IMS PDU Session for some time until dedicated bearer / QoS flow not established.
+                    <br>5. Please follow EPS Fallback procedure for Voice establishment on EPS.
+                    <br>6. After Voice call ends on EPS , UE will do either Redirection or Reselection to move back to NR.
+
+            </div>
+
+        </div>
+        <div class="rightcolumn">
+            <div class="card" style="margin-top: 0px;">
+                <h2>About Author</h2>
+                <div class="fakeimg" style="background-color: #ccc;">
+                    <img class="blog-image" src="Image/user.png">
+                </div>
+                <p style="text-align: center;"><b>Sushobhit Goyal</b><br>Technical Lead </p>
+            </div>
+
+            <div class="card">
+                <h2>Related Blogs</h2>
+
+                <div class="blog-card">
+                    <img class="blog-image" src="Image/5g_3.jpg" alt="Blog 3 Image" onclick="location.href='blog3.html';">
+                    <h2>Blog Title 3: Beyond 5G: The new era of connectivity.</h2>
+                    <p>Date: July 7, 2023</p>
+                    <p>Author: Ken Nagai</p>
+                    <a class="read-more-btn" href="blog3.html">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <img class="blog-image" src="Image/5g_4.jpg" alt="Blog 4 Image" onclick="location.href='blog4.html';">
+                    <h2>Blog Title 4: Insight on Green Network Security in 5G.</h2>
+                    <p>Date: February 27, 2023</p>
+                    <p>Author: Ercin Torun</p>
+                    <a class="read-more-btn" href="blog4.html">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <img class="blog-image" src="Image/5g_5.jpg" alt="Blog 5 Image" onclick="location.href='Blog5.html';">
+                    <h2>Blog Title 5: Discover the real 5G.</h2>
+                    <p>Date: December 22, 2021</p>
+                    <p>Author: Patrick Lopez</p>
+                    <a class="read-more-btn" href="blog5.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+</body>
+
+</html>
