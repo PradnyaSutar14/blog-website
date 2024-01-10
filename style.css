@@ -67,29 +67,11 @@ body {
     margin-top: 20px;
 }
 
-
-/* Clear floats after the columns */
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
-
-/* Footer */
-
-
-/* .footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-} */
-
-
-/* Responsive layout - when the screen is less than 800px wide, 
-make the two columns stack on top of each other instead of next to each other */
 
 @media screen and (max-width: 800px) {
     .leftcolumn,
@@ -150,7 +132,7 @@ make the two columns stack on top of each other instead of next to each other */
 }
 
 
-/* Footer CSS */
+/* Footer of CSS */
 
 footer {
     background-color: grey;
@@ -197,13 +179,6 @@ footer {
 .footer-bottom a:hover {
     text-decoration: underline;
 }
-
-
-/* .fa-linkedin {
-    background: #007bb5;
-    color: white;
-    font-size: 50px;
-} */
 
 .fa {
     padding: 10px;
